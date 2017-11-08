@@ -1,5 +1,5 @@
-FROM elasticsearch:2.3
+FROM elasticsearch:5.6
 
-RUN plugin install analysis-icu
-RUN plugin install analysis-kuromoji
-RUN plugin install analysis-phonetic
+RUN elasticsearch-plugin install analysis-icu
+RUN elasticsearch-plugin install analysis-kuromoji
+RUN elasticsearch-plugin install analysis-phonetic
