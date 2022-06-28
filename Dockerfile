@@ -1,5 +1,5 @@
-FROM elasticsearch:5.6
+FROM elasticsearch:7.17.4
 
-RUN elasticsearch-plugin install analysis-icu
-RUN elasticsearch-plugin install analysis-kuromoji
-RUN elasticsearch-plugin install analysis-phonetic
+RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-icu
+RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-kuromoji
+RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-phonetic
